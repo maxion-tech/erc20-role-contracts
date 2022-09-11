@@ -6,5 +6,5 @@ Deploy to testnet with
 ```shell
 export TOKEN_NAME="{token_name}" &&
 export TOKEN_SYMBOL="{token_symbol}" &&
-npm run deploy:testnet
+npm run deploy:bsc-testnet
 ```
