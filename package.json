@@ -2,6 +2,7 @@
   "name": "hardhat-project",
   "scripts": {
     "build": "hardhat compile",
+    "deploy:testnet": "hardhat run scripts/deploy.ts --network bscTestnet",
     "deploy:usdc:bsc-testnet": "export TOKEN_NAME=\"USD Coin\" && export TOKEN_SYMBOL=\"USDC\" && hardhat run scripts/deploy.ts --network bscTestnet",
     "deploy:adam:bsc-testnet": "export TOKEN_NAME=\"Ragnarok Online Adamantine Token\" && export TOKEN_SYMBOL=\"ADAM\" && hardhat run scripts/deploy.ts --network bscTestnet"
   },

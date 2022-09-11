@@ -1,13 +1,10 @@
-# Sample Hardhat Project
+# ERC20 Role Contracts
 
-This project demonstrates a basic Hardhat use case. It comes with a sample contract, a test for that contract, and a script that deploys that contract.
+This project is ERC20 with standard role DEFAULT_ADMIN_ROLE, MINTER_ROLE, PAUSER_ROLE
 
-Try running some of the following tasks:
-
+Deploy to testnet with
 ```shell
-npx hardhat help
-npx hardhat test
-GAS_REPORT=true npx hardhat test
-npx hardhat node
-npx hardhat run scripts/deploy.ts
+export TOKEN_NAME="{token_name}" &&
+export TOKEN_SYMBOL="{token_symbol}" &&
+npm run deploy:testnet
 ```
