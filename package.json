@@ -1,0 +1,13 @@
+{
+  "name": "hardhat-project",
+  "scripts": {
+    "build": "hardhat compile",
+    "deploy:usdc:bsc-testnet": "export TOKEN_NAME=\"USD Coin\" && export TOKEN_SYMBOL=\"USDC\" && hardhat run scripts/deploy.ts --network bscTestnet",
+    "deploy:adam:bsc-testnet": "export TOKEN_NAME=\"Ragnarok Online Adamantine Token\" && export TOKEN_SYMBOL=\"ADAM\" && hardhat run scripts/deploy.ts --network bscTestnet"
+  },
+  "devDependencies": {
+    "@nomicfoundation/hardhat-toolbox": "^1.0.2",
+    "@openzeppelin/contracts": "^4.7.3",
+    "hardhat": "^2.10.2"
+  }
+}
