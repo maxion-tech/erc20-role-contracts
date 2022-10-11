@@ -4,7 +4,9 @@
     "build": "hardhat compile",
     "deploy:bsc-testnet": "hardhat run scripts/deploy.ts --network bscTestnet",
     "deploy:usdc:bsc-testnet": "export TOKEN_NAME=\"USD Coin\" && export TOKEN_SYMBOL=\"USDC\" && hardhat run scripts/deploy.ts --network bscTestnet",
-    "deploy:adam:bsc-testnet": "export TOKEN_NAME=\"Ragnarok Online Adamantine Token\" && export TOKEN_SYMBOL=\"ADAM\" && hardhat run scripts/deploy.ts --network bscTestnet"
+    "deploy:adam:bsc-testnet": "export TOKEN_NAME=\"Ragnarok Online Adamantine Token\" && export TOKEN_SYMBOL=\"ADAM\" && hardhat run scripts/deploy.ts --network bscTestnet",
+    "deploy:adam-vn:bsc-testnet": "export TOKEN_NAME=\"ROP2E Adamantine Vietnam\" && export TOKEN_SYMBOL=\"ADAMVN\" && hardhat run scripts/deploy.ts --network bscTestnet",
+    "deploy:adam-id:bsc-testnet": "export TOKEN_NAME=\"ROP2E Adamantine Indonesia\" && export TOKEN_SYMBOL=\"ADAMID\" && hardhat run scripts/deploy.ts --network bscTestnet"
   },
   "devDependencies": {
     "@nomicfoundation/hardhat-toolbox": "^1.0.2",
