@@ -4,6 +4,7 @@
     "build": "hardhat compile",
     "deploy:bsc-testnet": "hardhat run scripts/deploy.ts --network bscTestnet",
     "deploy:usdc:bsc-testnet": "source .env && export TOKEN_NAME=\"USD Coin\" && export TOKEN_SYMBOL=\"USDC\" && hardhat run scripts/deploy.ts --network bscTestnet",
+    "deploy:usdc:bsc-testnet:hw": "source .env && export TOKEN_NAME=\"USD Coin\" && export TOKEN_SYMBOL=\"USDC\" && hardhat run scripts/deploy_hw.ts --network bscTestnet",
     "deploy:adam:bsc-testnet:hw": "source .env && export TOKEN_NAME=\"ROVerse Adamantine Token\" && export TOKEN_SYMBOL=\"ADAM\" && hardhat run scripts/deploy_hw.ts --network bscTestnet",
     "deploy:adam:bsc-testnet": "source .env && export TOKEN_NAME=\"ROVerse Adamantine Token\" && export TOKEN_SYMBOL=\"ADAM\" && hardhat run scripts/deploy.ts --network bscTestnet"
   },
